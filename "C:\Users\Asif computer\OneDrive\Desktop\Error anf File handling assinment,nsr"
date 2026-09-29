@@ -1,0 +1,174 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNSGkSo9a6tAW4WwRzmFXlZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/waseemniaxii/Assignment-3-session-4/blob/master/%22C%3A%5CUsers%5CAsif%20computer%5COneDrive%5CDesktop%5CError%20anf%20File%20handling%20assinment%2Cnsr%22\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hWwyFC7y94OG",
+        "outputId": "1972515d-053e-4239-894f-a9017ea3d94b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"hello\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Account:\n",
+        "    def __init__(self,balance,password):\n",
+        "        self.balance=balance\n",
+        "        self.password=password\n",
+        "\n",
+        "    def finalll(self):\n",
+        "      return self.balance\n",
+        "\n",
+        "    def credit(self,amount):\n",
+        "        self.balance+=amount\n",
+        "        print(\"Rs\",amount,\"credited to your acocunt\")\n",
+        "        print(\"total balance=\",self.finalll())\n",
+        "\n",
+        "    def debit(self,amount):\n",
+        "        self.balance-=amount\n",
+        "        print(\"Rs\",amount,\"credited to your acocunt\")\n",
+        "        print(\"total balance=\",self.finalll())\n",
+        "\n",
+        "\n",
+        "acc1=Account(28889, 8903)\n",
+        "acc1. credit(557)\n",
+        "acc1.debit(4568)\n",
+        "acc1.credit(3456723456)\n",
+        "acc1.debit(223456765434)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vgNmyKFf99fV",
+        "outputId": "3de83097-12d0-42d5-9102-137ddc837f78"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rs 557 credited to your acocunt\n",
+            "total balance= 29446\n",
+            "Rs 4568 credited to your acocunt\n",
+            "total balance= 24878\n",
+            "Rs 3456723456 credited to your acocunt\n",
+            "total balance= 3456748334\n",
+            "Rs 223456765434 credited to your acocunt\n",
+            "total balance= -220000017100\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "YuCrYyB7NSun"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Account:\n",
+        "    def __init__(self, balance, password):\n",
+        "        self.balance = balance\n",
+        "        self.password = password\n",
+        "\n",
+        "    def credit(self, amount):\n",
+        "        self.balance += amount\n",
+        "        print(f\"Rs {amount} credited to your account\")\n",
+        "        print(f\"Total balance = {self.get_balance()}\")\n",
+        "\n",
+        "    def debit(self, amount):\n",
+        "        if amount > self.balance:\n",
+        "            print(\"Insufficient balance!\")\n",
+        "            return\n",
+        "\n",
+        "        self.balance -= amount\n",
+        "        print(f\"Rs {amount} debited from your account\")\n",
+        "        print(f\"Total balance = {self.get_balance()}\")\n",
+        "\n",
+        "    def get_balance(self):\n",
+        "        return self.balance\n",
+        "\n",
+        "\n",
+        "# Example Usage:\n",
+        "acc1 = Account(1000, \"secret123\")\n",
+        "acc1.credit(500)\n",
+        "acc1.debit(200)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J-DDQn2rG72e",
+        "outputId": "69f7d77f-f9cc-4e97-de87-119154814ebf"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rs 500 credited to your account\n",
+            "Total balance = 1500\n",
+            "Rs 200 debited from your account\n",
+            "Total balance = 1300\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "H8czlKIp_ypq"
+      },
+      "execution_count": 8,
+      "outputs": []
+    }
+  ]
+}
